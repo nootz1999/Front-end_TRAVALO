@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background: rgb(99, 233, 128); */
+    box-sizing: border-box;
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Baloo 2', cursive;
+}
+header{
+    width:100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../img/taj1.jpg'); */
+    background-image: url('../img/taj2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    /* background: rgba(5, 5, 5, 0.219); */
+    background: rgba(0, 0, 0, 0.082);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    font-size: 30px;
+    width:30%;
+    text-align: center;
+    /* background: rgb(235, 162, 171); */
+}
+nav .menu{
+    width:40%;
+    /* background: rgb(171, 233, 174); */
+    display: flex;
+    justify-content: space-around;
+    /* font-family: 'Baloo 2', cursive; */
+}
+nav .menu a {
+    /* width: 25%; */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:hover{
+    color: black;
+    /* color:#00b894; */
+    /* font-weight: bolder; */
+    /* font-size: medium; */
+    transition: all 0.3s ease-in-out;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: white;
+}
+
+section h3{
+    font-size: 40px;
+    /* font-weight: 200; */
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight:700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+
+}section p{
+    font-size: 30px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+
+
+    /* background-image: linear-gradient(to left, rgb(228, 5, 228), indigo, blue, rgb(15, 248, 217), yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-weight: bold; 
+}
+/* .rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  } */
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight:500;
+    text-decoration:none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+section .btnone{
+    background: rgba(255, 255, 255, 0.692);
+    color: #000;
+    font-weight:bold;
+}
+.btnone:hover{
+    /* transition: all 0.3s ease-in-out; */
+    background: #09bb97;
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+}
+section .btntwo{
+    background: #09bb97b2;
+    color: white;
+    font-weight:bold;
+}
+.btntwo:hover{
+    /* transition: all 0.3s ease-in-out; */
+    background: rgba(255, 255, 255, 0.856);
+    color: #000;
+    font-weight:bold;
+    font-size: 20px;
+}
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    /* color: #00b894; */
+    color: black;
+}
+
+@keyframes changetext{
+    0%{content: "agra";}
+    20%{content: "rajasthan";}
+    35%{content: "himalyas";}
+    60%{content: "kerala";}
+    80%{content: "gujrat";}
+    100%{content: "kolkata";}
+}
