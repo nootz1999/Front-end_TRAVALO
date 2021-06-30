@@ -10,7 +10,7 @@ header{
     width:100%;
     height: 100vh;
     /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../img/taj1.jpg'); */
-    background-image: url('../img/taj2.jpg');
+    background-image: url('taj2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
